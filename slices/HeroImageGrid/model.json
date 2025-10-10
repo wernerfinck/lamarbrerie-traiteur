@@ -1,0 +1,67 @@
+{
+  "type": "SharedSlice",
+  "id": "hero_image_grid",
+  "name": "HeroImageGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Hero section with left-aligned text content and right-aligned multi-image grid. Includes title, description, CTA, and visual collage.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1,strong,em",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "cta": {
+          "type": "Link",
+          "config": {
+            "label": "Call to Action",
+            "allowText": true,
+            "repeat": false,
+            "select": null
+          }
+        },
+        "images": {
+          "type": "Group",
+          "config": {
+            "label": "Images",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              }
+            }
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
