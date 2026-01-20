@@ -13,7 +13,6 @@ export type FeatureGridProps = SliceComponentProps<Content.FeatureGridSlice>;
  * Component for "FeatureGrid" Slices.
  */
 const FeatureGrid: FC<FeatureGridProps> = ({ slice }) => {
-  console.log(slice.primary.background_color);
   return (
     <section
       data-slice-type={slice.slice_type}

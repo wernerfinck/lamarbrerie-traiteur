@@ -1,0 +1,54 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"first_name_label": {
+				"__TYPE__": "FieldContent",
+				"value": "alike",
+				"type": "Text"
+			},
+			"last_name_label": {
+				"__TYPE__": "FieldContent",
+				"value": "there",
+				"type": "Text"
+			},
+			"email_label": {
+				"__TYPE__": "FieldContent",
+				"value": "own",
+				"type": "Text"
+			},
+			"company_label": {
+				"__TYPE__": "FieldContent",
+				"value": "wire",
+				"type": "Text"
+			},
+			"phone_label": {
+				"__TYPE__": "FieldContent",
+				"value": "tropical",
+				"type": "Text"
+			},
+			"people_count_label": {
+				"__TYPE__": "FieldContent",
+				"value": "brief",
+				"type": "Text"
+			},
+			"details_label": {
+				"__TYPE__": "FieldContent",
+				"value": "kill",
+				"type": "Text"
+			},
+			"details_max_characters_text": {
+				"__TYPE__": "FieldContent",
+				"value": "mad",
+				"type": "Text"
+			},
+			"submit_button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "beautiful",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

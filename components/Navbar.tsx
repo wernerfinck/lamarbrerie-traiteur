@@ -45,7 +45,7 @@ export const Navbar = ({
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 cursor-pointer"
           >
             <span className="sr-only">Open main menu</span>
             <Menu
@@ -83,7 +83,7 @@ export const Navbar = ({
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-gray-700 cursor-pointer"
             >
               <span className="sr-only">Close menu</span>
               <X

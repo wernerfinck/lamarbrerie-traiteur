@@ -175,6 +175,8 @@ export type FooterDocument<Lang extends string = string> =
   >;
 
 type HomeDocumentDataSlicesSlice =
+  | ContactFormSlice
+  | MenuItemsWithGroupedExtrasSlice
   | PricingCardsSlice
   | SectionHeadingSlice
   | HighlightContentWithImageSlice
@@ -302,6 +304,8 @@ export type NavbarDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | ContactFormSlice
+  | MenuItemsWithGroupedExtrasSlice
   | SectionHeadingSlice
   | PricingCardsSlice
   | HeroImageGridSlice
@@ -377,6 +381,131 @@ export type AllDocumentTypes =
   | HomeDocument
   | NavbarDocument
   | PageDocument;
+
+/**
+ * Primary content in *ContactForm → Default → Primary*
+ */
+export interface ContactFormSliceDefaultPrimary {
+  /**
+   * First Name Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.first_name_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  first_name_label: prismic.KeyTextField;
+
+  /**
+   * Last Name Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.last_name_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  last_name_label: prismic.KeyTextField;
+
+  /**
+   * Email Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.email_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  email_label: prismic.KeyTextField;
+
+  /**
+   * Company Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.company_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  company_label: prismic.KeyTextField;
+
+  /**
+   * Phone Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.phone_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  phone_label: prismic.KeyTextField;
+
+  /**
+   * People Count Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.people_count_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  people_count_label: prismic.KeyTextField;
+
+  /**
+   * Additional Details Label field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.details_label
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  details_label: prismic.KeyTextField;
+
+  /**
+   * Max Characters Helper Text field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.details_max_characters_text
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  details_max_characters_text: prismic.KeyTextField;
+
+  /**
+   * Button Text field in *ContactForm → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact_form.default.primary.submit_button_text
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  submit_button_text: prismic.KeyTextField;
+}
+
+/**
+ * Default variation for ContactForm Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Standard contact form layout with labeled fields and a submit button, suitable for general inquiries and onboarding flows.
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type ContactFormSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ContactFormSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *ContactForm*
+ */
+type ContactFormSliceVariation = ContactFormSliceDefault;
+
+/**
+ * ContactForm Shared Slice
+ *
+ * - **API ID**: `contact_form`
+ * - **Description**: *None*
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type ContactFormSlice = prismic.SharedSlice<
+  "contact_form",
+  ContactFormSliceVariation
+>;
 
 /**
  * Item in *FeatureGrid → Default → Primary → Features*
@@ -1148,6 +1277,130 @@ export type LogoGridSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Item in *MenuItemsWithGroupedExtras → Default → Primary → Menu Items*
+ */
+export interface MenuItemsWithGroupedExtrasSliceDefaultPrimaryItemsItem {
+  /**
+   * Image field in *MenuItemsWithGroupedExtras → Default → Primary → Menu Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.items[].image
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Description field in *MenuItemsWithGroupedExtras → Default → Primary → Menu Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.items[].description
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  description: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *MenuItemsWithGroupedExtras → Default → Primary*
+ */
+export interface MenuItemsWithGroupedExtrasSliceDefaultPrimary {
+  /**
+   * Section Title field in *MenuItemsWithGroupedExtras → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.title
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  title: prismic.RichTextField;
+
+  /**
+   * subtitle field in *MenuItemsWithGroupedExtras → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.subtitle
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  subtitle: prismic.RichTextField;
+
+  /**
+   * Menu Items field in *MenuItemsWithGroupedExtras → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.items[]
+   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+   */
+  items: prismic.GroupField<
+    Simplify<MenuItemsWithGroupedExtrasSliceDefaultPrimaryItemsItem>
+  >;
+
+  /**
+   * Extras title field in *MenuItemsWithGroupedExtras → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.extra_title
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  extra_title: prismic.RichTextField;
+
+  /**
+   * Extras List field in *MenuItemsWithGroupedExtras → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.extras
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  extras: prismic.RichTextField;
+
+  /**
+   * Background Color field in *MenuItemsWithGroupedExtras → Default → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: menu_items_with_grouped_extras.default.primary.background_color
+   * - **Documentation**: https://prismic.io/docs/fields/select
+   */
+  background_color: prismic.SelectField<"vert" | "jaune" | "bleu">;
+}
+
+/**
+ * Default variation for MenuItemsWithGroupedExtras Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Displays a grid of menu items with images, captions, and a rich text area below for extras or additional grouped menu offerings.
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type MenuItemsWithGroupedExtrasSliceDefault =
+  prismic.SharedSliceVariation<
+    "default",
+    Simplify<MenuItemsWithGroupedExtrasSliceDefaultPrimary>,
+    never
+  >;
+
+/**
+ * Slice variation for *MenuItemsWithGroupedExtras*
+ */
+type MenuItemsWithGroupedExtrasSliceVariation =
+  MenuItemsWithGroupedExtrasSliceDefault;
+
+/**
+ * MenuItemsWithGroupedExtras Shared Slice
+ *
+ * - **API ID**: `menu_items_with_grouped_extras`
+ * - **Description**: *None*
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type MenuItemsWithGroupedExtrasSlice = prismic.SharedSlice<
+  "menu_items_with_grouped_extras",
+  MenuItemsWithGroupedExtrasSliceVariation
+>;
+
+/**
  * Item in *PricingCards → Default → Primary → Cards*
  */
 export interface PricingCardsSliceDefaultPrimaryCardsItem {
@@ -1457,6 +1710,10 @@ declare module "@prismicio/client" {
       PageDocumentData,
       PageDocumentDataSlicesSlice,
       AllDocumentTypes,
+      ContactFormSlice,
+      ContactFormSliceDefaultPrimary,
+      ContactFormSliceVariation,
+      ContactFormSliceDefault,
       FeatureGridSlice,
       FeatureGridSliceDefaultPrimaryFeaturesItem,
       FeatureGridSliceDefaultPrimary,
@@ -1492,6 +1749,11 @@ declare module "@prismicio/client" {
       LogoGridSliceDefaultPrimary,
       LogoGridSliceVariation,
       LogoGridSliceDefault,
+      MenuItemsWithGroupedExtrasSlice,
+      MenuItemsWithGroupedExtrasSliceDefaultPrimaryItemsItem,
+      MenuItemsWithGroupedExtrasSliceDefaultPrimary,
+      MenuItemsWithGroupedExtrasSliceVariation,
+      MenuItemsWithGroupedExtrasSliceDefault,
       PricingCardsSlice,
       PricingCardsSliceDefaultPrimaryCardsItem,
       PricingCardsSliceDefaultPrimary,

@@ -23,7 +23,6 @@ export default async function RootLayout({
   const client = createClient();
   const nav = await client.getSingle('navbar');
   const footer = await client.getSingle('footer');
-  console.log('footer', footer);
   return (
     <html lang="fr">
       <body

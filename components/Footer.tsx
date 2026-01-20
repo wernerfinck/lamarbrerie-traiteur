@@ -8,7 +8,6 @@ export default function Footer({
   footerData: Simplify<FooterDocumentData>;
 }) {
   const now = new Date();
-  console.log('now', now);
   return (
     <footer className="bg-violet">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">

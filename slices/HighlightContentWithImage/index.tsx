@@ -15,7 +15,6 @@ export type HighlightContentWithImageProps =
 const HighlightContentWithImage: FC<HighlightContentWithImageProps> = ({
   slice,
 }) => {
-  console.log(slice.variation);
   return (
     <section
       data-slice-type={slice.slice_type}

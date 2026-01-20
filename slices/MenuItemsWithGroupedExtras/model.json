@@ -1,0 +1,87 @@
+{
+  "type": "SharedSlice",
+  "id": "menu_items_with_grouped_extras",
+  "name": "MenuItemsWithGroupedExtras",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a grid of menu items with images, captions, and a rich text area below for extras or additional grouped menu offerings.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Section Title"
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "subtitle",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading3"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Menu Items",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "height": 255,
+                    "width": 255
+                  },
+                  "label": "Image"
+                }
+              },
+              "description": {
+                "type": "Text",
+                "config": {
+                  "label": "Description",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "extra_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Extras title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading5,heading4"
+          }
+        },
+        "extras": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em,hyperlink",
+            "label": "Extras List"
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "Background Color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

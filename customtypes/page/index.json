@@ -17,6 +17,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "contact_form": {
+              "type": "SharedSlice"
+            },
+            "menu_items_with_grouped_extras": {
+              "type": "SharedSlice"
+            },
             "section_heading": {
               "type": "SharedSlice"
             },
