@@ -1,0 +1,139 @@
+{
+  "type": "SharedSlice",
+  "id": "highlight_content_with_image",
+  "name": "HighlightContentWithImage",
+  "variations": [
+    {
+      "id": "default_left_content_right_image",
+      "name": "Default: Content Left, Image Right",
+      "description": "Textual content with title, description, and button on the left; supporting image on the right.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "main_image": {
+          "type": "Image",
+          "config": {
+            "label": "Main Image"
+          }
+        },
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "icon",
+            "constraint": {
+              "width": 28,
+              "height": 28
+            },
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "primary_button": {
+          "type": "Link",
+          "config": {
+            "label": "Primary Button",
+            "allowText": true,
+            "repeat": false,
+            "select": null
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "contentRightImageLeft",
+      "name": "Content right, image Left",
+      "description": "Textual content with title, description, and button on the left; supporting image on the right.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "main_image": {
+          "type": "Image",
+          "config": {
+            "label": "Main Image"
+          }
+        },
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "Icon",
+            "constraint": {
+              "width": 28,
+              "height": 28
+            },
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "primary_button": {
+          "type": "Link",
+          "config": {
+            "label": "Primary Button",
+            "allowText": true,
+            "repeat": false,
+            "select": null
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

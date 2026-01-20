@@ -1,12 +1,12 @@
 {
   "type": "SharedSlice",
-  "id": "hero_image_grid",
-  "name": "HeroImageGrid",
+  "id": "image_gallery",
+  "name": "ImageGallery",
   "variations": [
     {
-      "id": "default",
-      "name": "Default",
-      "description": "Hero section with left-aligned text content and right-aligned multi-image grid. Includes title, description, CTA, and visual collage.",
+      "id": "carousel_with_cta",
+      "name": "Carousel with CTA",
+      "description": "A carousel/slider displaying multiple images with navigation arrows and a call-to-action button below.",
       "version": "initial",
       "imageUrl": "",
       "docURL": "...",
@@ -14,28 +14,8 @@
         "title": {
           "type": "StructuredText",
           "config": {
-            "labels": [
-              "color"
-            ],
-            "single": "heading1,strong,em",
+            "single": "heading2,strong",
             "label": "Title"
-          }
-        },
-        "description": {
-          "type": "StructuredText",
-          "config": {
-            "multi": "paragraph,strong,em,hyperlink",
-            "label": "Description"
-          }
-        },
-        "cta": {
-          "type": "Link",
-          "config": {
-            "label": "Call to Action",
-            "placeholder": "",
-            "allowText": true,
-            "repeat": false,
-            "select": null
           }
         },
         "images": {
@@ -50,6 +30,15 @@
                 }
               }
             }
+          }
+        },
+        "cta_button": {
+          "type": "Link",
+          "config": {
+            "label": "CTA Button",
+            "allowText": true,
+            "repeat": false,
+            "select": null
           }
         },
         "background_color": {

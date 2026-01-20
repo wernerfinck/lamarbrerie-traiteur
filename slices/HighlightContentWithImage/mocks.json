@@ -1,0 +1,183 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default_left_content_right_image",
+		"primary": {
+			"main_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+				"width": 5616,
+				"height": 3744,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "cage",
+				"credits": null,
+				"__TYPE__": "ImageContent"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Seems"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Excepteur amet tempor reprehenderit incididunt quis proident qui laboris adipisicing elit id ipsum deserunt. Minim ad aliqua laboris fugiat minim voluptate. Labore eu qui amet exercitation eiusmod sit."
+						}
+					}
+				]
+			},
+			"primary_button": {
+				"key": "dc4b96da-868a-485c-b114-a91770d68ee5",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "coal"
+				}
+			},
+			"icon": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
+					"width": 4010,
+					"height": 4010
+				},
+				"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?rect=0%2C0%2C4010%2C4010&w=28&h=28",
+				"width": 28,
+				"height": 28,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "planet",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "jaune",
+				"type": "Select"
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "contentRightImageLeft",
+		"primary": {
+			"main_image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+					"width": 4000,
+					"height": 6000
+				},
+				"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+				"width": 4000,
+				"height": 6000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "mix",
+				"credits": null,
+				"__TYPE__": "ImageContent"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Music"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Culpa deserunt reprehenderit aute voluptate dolor quis tempor laborum occaecat eiusmod."
+						}
+					}
+				]
+			},
+			"primary_button": {
+				"key": "1583f8f3-e077-4e22-abc8-e2797f6a6f3b",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "wind"
+				}
+			},
+			"icon": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+					"width": 5616,
+					"height": 3744
+				},
+				"url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?rect=936%2C0%2C3744%2C3744&w=28&h=28",
+				"width": 28,
+				"height": 28,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 936,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "burst",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "jaune",
+				"type": "Select"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

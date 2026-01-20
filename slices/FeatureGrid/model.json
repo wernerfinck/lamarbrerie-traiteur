@@ -1,12 +1,12 @@
 {
   "type": "SharedSlice",
-  "id": "hero_image_grid",
-  "name": "HeroImageGrid",
+  "id": "feature_grid",
+  "name": "FeatureGrid",
   "variations": [
     {
       "id": "default",
       "name": "Default",
-      "description": "Hero section with left-aligned text content and right-aligned multi-image grid. Includes title, description, CTA, and visual collage.",
+      "description": "Grid of feature cards with image and title.",
       "version": "initial",
       "imageUrl": "",
       "docURL": "...",
@@ -14,39 +14,47 @@
         "title": {
           "type": "StructuredText",
           "config": {
-            "labels": [
-              "color"
-            ],
-            "single": "heading1,strong,em",
-            "label": "Title"
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
           }
         },
         "description": {
           "type": "StructuredText",
           "config": {
-            "multi": "paragraph,strong,em,hyperlink",
-            "label": "Description"
-          }
-        },
-        "cta": {
-          "type": "Link",
-          "config": {
-            "label": "Call to Action",
+            "label": "description",
             "placeholder": "",
-            "allowText": true,
-            "repeat": false,
-            "select": null
+            "allowTargetBlank": false,
+            "single": "heading3"
           }
         },
-        "images": {
+        "features": {
           "type": "Group",
           "config": {
-            "label": "Images",
+            "label": "Features",
             "fields": {
               "image": {
                 "type": "Image",
                 "config": {
                   "label": "Image"
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": false,
+                  "allowText": false,
+                  "repeat": false
                 }
               }
             }

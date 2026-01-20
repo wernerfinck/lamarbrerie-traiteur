@@ -1,0 +1,48 @@
+{
+  "type": "SharedSlice",
+  "id": "section_heading",
+  "name": "SectionHeading",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a pre-title and a large, bolded section title, both center-aligned.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "pre_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Pre-title",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "lunch",
+									"type": "Text"
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Do excepteur velit eiusmod quis. Dolore ut aute cupidatat ipsum officia dolore aliqua ex velit eiusmod quis adipisicing anim. Incididunt nostrud Lorem sunt consectetur non reprehenderit sunt irure."
+											}
+										}
+									]
+								}
+							],
+							[
+								"per_person_note",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "money",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "spend",
+									"type": "Text"
+								}
+							],
+							[
+								"button",
+								{
+									"key": "44b7b9d6-4805-42c4-8312-c593ddaf9092",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://google.com",
+										"text": "thank"
+									}
+								}
+							],
+							[
+								"features_list",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Elit esse ea ullamco laboris non id qui ad proident dolore culpa Lorem deserunt proident. Cupidatat fugiat amet sint sit consequat ea ex consequat sit est magna tempor ea qui."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "jaune",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,90 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"features": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+										"width": 4076,
+										"height": 2712
+									},
+									"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+									"width": 4076,
+									"height": 2712,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "exciting",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "escape",
+									"type": "Text"
+								}
+							],
+							[
+								"link",
+								{
+									"key": "41809bc8-a167-41a2-93ee-66e861dc1f6c",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "bleu",
+				"type": "Select"
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Protection"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading3",
+						"content": {
+							"text": "Difference"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

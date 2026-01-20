@@ -1,0 +1,82 @@
+{
+  "type": "SharedSlice",
+  "id": "pricing_cards",
+  "name": "PricingCards",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard layout with multiple pricing cards side by side and call-to-action button per card.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "cards": {
+          "type": "Group",
+          "config": {
+            "label": "Cards",
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "price": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,strong",
+                  "label": "Price"
+                }
+              },
+              "per_person_note": {
+                "type": "Text",
+                "config": {
+                  "label": "Per Person Note"
+                }
+              },
+              "description": {
+                "type": "Text",
+                "config": {
+                  "label": "Description"
+                }
+              },
+              "button": {
+                "type": "Link",
+                "config": {
+                  "label": "Reservation Button",
+                  "placeholder": "",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              },
+              "features_list": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "features list",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "single": "list-item,hyperlink"
+                }
+              }
+            }
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

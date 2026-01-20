@@ -1,0 +1,57 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"section_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Individual"
+						}
+					}
+				]
+			},
+			"testimonials": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"testimonial_content",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Incididunt ad ex labore eiusmod elit qui."
+											}
+										}
+									]
+								}
+							],
+							[
+								"author_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "do",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "jaune",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

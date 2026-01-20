@@ -8,9 +8,6 @@
 				"value": [
 					{
 						"type": "heading1",
-						"config": {
-							"labels": ["color"]
-						},
 						"content": {
 							"text": "Naturally"
 						}
@@ -29,12 +26,12 @@
 				]
 			},
 			"cta": {
-				"key": "4e87a651-3dbc-4810-93e8-64a11b14eb77",
+				"key": "90a884fe-8c18-489f-a3d3-bd65dc582936",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "http://google.com",
-					"text": "bite"
+					"text": "stepped"
 				}
 			},
 			"images": {

@@ -3,5 +3,16 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  feature_grid: dynamic(() => import("./FeatureGrid")),
+  headline_cta_banner: dynamic(() => import("./HeadlineCtaBanner")),
   hero_image_grid: dynamic(() => import("./HeroImageGrid")),
+  highlight_content_with_image: dynamic(
+    () => import("./HighlightContentWithImage"),
+  ),
+  icon_text_grid: dynamic(() => import("./IconTextGrid")),
+  image_gallery: dynamic(() => import("./ImageGallery")),
+  logo_grid: dynamic(() => import("./LogoGrid")),
+  pricing_cards: dynamic(() => import("./PricingCards")),
+  section_heading: dynamic(() => import("./SectionHeading")),
+  testimonial_carousel: dynamic(() => import("./TestimonialCarousel")),
 };

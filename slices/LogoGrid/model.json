@@ -1,0 +1,57 @@
+{
+  "type": "SharedSlice",
+  "id": "logo_grid",
+  "name": "LogoGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default logo grid with an optional title and a repeatable set of logo items, each with its own image and optional label.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading3",
+            "label": "Title"
+          }
+        },
+        "logos": {
+          "type": "Group",
+          "config": {
+            "label": "Logos",
+            "fields": {
+              "logo_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Logo Image"
+                }
+              },
+              "logo_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Logo Label"
+                }
+              }
+            }
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

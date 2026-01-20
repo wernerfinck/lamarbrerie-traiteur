@@ -1,0 +1,58 @@
+{
+  "type": "SharedSlice",
+  "id": "testimonial_carousel",
+  "name": "TestimonialCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard horizontal testimonial carousel with navigation arrows and cards for each testimonial.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2,strong",
+            "label": "Section Title"
+          }
+        },
+        "testimonials": {
+          "type": "Group",
+          "config": {
+            "label": "Testimonials",
+            "fields": {
+              "testimonial_content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Testimonial Content"
+                }
+              },
+              "author_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Author Name"
+                }
+              }
+            }
+          }
+        },
+        "background_color": {
+          "type": "Select",
+          "config": {
+            "label": "background color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

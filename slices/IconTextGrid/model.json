@@ -1,0 +1,83 @@
+{
+  "type": "SharedSlice",
+  "id": "icon_text_grid",
+  "name": "IconTextGrid",
+  "variations": [
+    {
+      "id": "four_column",
+      "name": "Four Column Grid",
+      "description": "Displays four icon-text items in a two-by-two grid layout, each with an icon, title, and description.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Section Title"
+          }
+        },
+        "section_description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Items",
+            "fields": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "label": "Icon",
+                  "constraint": {
+                    "height": 28,
+                    "width": 28
+                  }
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "title",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "single": "heading4"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink"
+                }
+              }
+            }
+          }
+        },
+        "backround_color": {
+          "type": "Select",
+          "config": {
+            "label": "backround color",
+            "placeholder": "",
+            "options": [
+              "vert",
+              "jaune",
+              "bleu"
+            ],
+            "default_value": "vert"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"pre_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Empty"
+						}
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aliquip reprehenderit ad ullamco. Aute laboris eu sunt tempor incididunt aliquip incididunt id veniam proident ullamco anim fugiat minim esse."
+						}
+					}
+				]
+			},
+			"background_color": {
+				"__TYPE__": "FieldContent",
+				"value": "vert",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]
