@@ -32,7 +32,7 @@ export default async function RootLayout({
         <Navbar navData={nav.data} />
         {children}
         <Footer footerData={footer.data} />
-        <NetlifyContactForm />
+        {/* <NetlifyContactForm /> */}
       </body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>

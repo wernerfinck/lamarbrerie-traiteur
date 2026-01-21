@@ -14,14 +14,12 @@ export type ContactFormProps = SliceComponentProps<Content.ContactFormSlice>;
  * Component for "ContactForm" Slices.
  */
 const ContactForm: FC<ContactFormProps> = ({ slice }) => {
-  
   return (
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
       className="bg-jaune"
     >
-      blabla
       <ContactFormClient />
     </section>
   );
