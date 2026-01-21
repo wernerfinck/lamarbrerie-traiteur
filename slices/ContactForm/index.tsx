@@ -18,12 +18,23 @@ const ContactForm: FC<ContactFormProps> = ({ slice }) => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
+    // 1. On crée le corps de la requête
     const formData = new FormData(form);
-    // On transforme le FormData en chaîne de caractères encodée pour URL
     const body = new URLSearchParams();
+
+    // 2. On ajoute obligatoirement le nom du formulaire
+    body.append('form-name', 'contact');
+
+    // 3. On ajoute tous les champs du FormData
     formData.forEach((value, key) => {
-      body.append(key, value.toString());
+      // On ignore le form-name s'il est déjà présent dans le FormData pour éviter les doublons
+      if (key !== 'form-name') {
+        body.append(key, value.toString());
+      }
     });
+
+    console.log('Envoi des données :', body.toString());
+    
     try {
       await fetch('/', {
         method: 'POST',
