@@ -5,6 +5,7 @@ import { PrismicPreview } from '@prismicio/next';
 import { createClient, repositoryName } from '@/prismicio';
 import { Navbar } from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import NetlifyContactForm from '@/components/NetlifyContactForm';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default async function RootLayout({
         <Navbar navData={nav.data} />
         {children}
         <Footer footerData={footer.data} />
+        <NetlifyContactForm />
       </body>
       <PrismicPreview repositoryName={repositoryName} />
     </html>
