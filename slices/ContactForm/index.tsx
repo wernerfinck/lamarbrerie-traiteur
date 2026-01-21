@@ -4,6 +4,7 @@ import { FC, useState, FormEvent } from 'react';
 import { Content } from '@prismicio/client';
 import { SliceComponentProps } from '@prismicio/react';
 import { ContactFormClient } from '@/components/ContactFormClient';
+import TallyForm from '@/components/TallyForm';
 
 /**
  * Props for `ContactForm`.
@@ -20,7 +21,13 @@ const ContactForm: FC<ContactFormProps> = ({ slice }) => {
       data-slice-variation={slice.variation}
       className="bg-jaune"
     >
-      <ContactFormClient />
+      <TallyForm
+        src="https://tally.so/embed/5BZ45M?hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        height={867}
+        title="Réservation la Marbrerie - traiteur"
+      />
+
+      {/* <ContactFormClient /> */}
     </section>
   );
 };
