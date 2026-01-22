@@ -12,7 +12,7 @@ export const Navbar = ({
   navData: Simplify<NavbarDocumentData>;
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  console.log('navdata', navData);
   return (
     <header className="bg-vert">
       <nav
@@ -32,11 +32,11 @@ export const Navbar = ({
             />
           </Link>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navData.link.map((item) => (
+            {navData.links.map((item) => (
               <PrismicNextLink
                 className="font-semibold text-gray-900 hover:text-orange"
-                key={item.key}
-                field={item}
+                key={item.link.text}
+                field={item.link}
               />
             ))}
           </div>
@@ -95,11 +95,12 @@ export const Navbar = ({
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navData.link.map((item) => (
+                {navData.links.map((item) => (
                   <PrismicNextLink
-                    key={item.key}
-                    field={item}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:text-orange"
+                    key={item.link.text}
+                    field={item.link}
+                    onClick={() => setMobileMenuOpen(false)}
                   />
                 ))}
               </div>
@@ -107,6 +108,7 @@ export const Navbar = ({
                 <PrismicNextLink
                   field={navData.button}
                   className="orange-btn"
+                  onClick={() => setMobileMenuOpen(false)}
                 />
               </div>
             </div>
