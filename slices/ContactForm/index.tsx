@@ -3,7 +3,6 @@
 import { FC, useState, FormEvent } from 'react';
 import { Content } from '@prismicio/client';
 import { SliceComponentProps } from '@prismicio/react';
-import { ContactFormClient } from '@/components/ContactFormClient';
 import TallyForm from '@/components/TallyForm';
 
 /**
